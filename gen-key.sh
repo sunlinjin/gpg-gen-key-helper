@@ -37,11 +37,12 @@ do
 done
 
 stty echo
+echo
 
 sed -e s/_REAL_NAME_/"$realName"/g -e s/_EMAIL_/"$emailAddress"/g -e s/_PASSPHRASE_/"$keyPassphrase"/ $PWD/key.template | gpg --batch --gen-key -
 
 confirm() {
-	read -r -p "${1:-Are you sure? [y/N]: " yesNo
+	read -r -p "${1:-Are you sure? [y/N]: }" yesNo
 
 	case "$yesNo" in
 		[yY][eE][sS]|[yY])
