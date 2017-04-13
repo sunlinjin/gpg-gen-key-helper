@@ -24,7 +24,13 @@ Just run:
 bash ./gen-key.sh
 ```
 
-and answear couple of questions.
+and answear couple of questions. After successful run you should have three files in dir:
+
+*  rsa-4096.pub - public key
+*  rsa-4096.sec - private key
+
+(and if you answear Y to export)
+*  public.key.asc - public key in ASCII format
 
 ## Known issues
 
