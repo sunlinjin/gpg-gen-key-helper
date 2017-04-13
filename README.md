@@ -47,3 +47,7 @@ If it returns anything less than 100-200, you have a problem. You can solve that
 ```shell
 apt-get install haveged
 ```
+
+(MacOS-only)
+
+Seems like a MacOS X GnuPG version is really fucked-up and does not generate private key in current dir. Or sth like that. I don't know, and as long as I use Linux - I DON'T CARE. :-)
